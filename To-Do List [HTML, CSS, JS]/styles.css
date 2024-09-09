@@ -1,0 +1,148 @@
+:root {
+  --darker: #2f3e46;
+  --dark: #354f52;
+  --light: #52796f;
+  --lighter: #84a98c;
+  --text: #cad2c5;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto Mono", monospace;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+/* BODY */
+body {
+  background-color: var(--darker);
+}
+
+/* HEADER */
+header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+}
+header h1 {
+  font-style: oblique;
+  color: var(--text);
+  font-size: 48px;
+  font-family: "Ga Maamli", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+header img {
+  width: 50px;
+  padding: 7px;
+}
+
+/* INPUT FIELD */
+.input-field {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.input-field input {
+  padding: 10px;
+  border-radius: 20px;
+  border: none;
+  background-color: var(--light);
+  margin: 10px;
+  font-size: 16px;
+  color: var(--text);
+}
+.input-field input::placeholder {
+  color: var(--lighter);
+}
+
+.input-field button {
+  border: none;
+  background-color: transparent;
+  text-transform: uppercase;
+  font-size: 16px;
+  color: var(--text);
+  cursor: pointer;
+}
+
+/* TASK CONTENTS */
+.content {
+  background-color: var(--light);
+  width: 70vw;
+  height: 80vh;
+  margin: 0 auto;
+  margin-top: 10px;
+  border-radius: 15px;
+}
+.content .items {
+  padding: 5px;
+  width: auto;
+}
+.content .items ul {
+  list-style: none;
+  background-color: var(--lighter);
+  border: none;
+  border-radius: 10px;
+  padding-left: 10px;
+}
+.content .items ul li::first-letter {
+  text-transform: capitalize;
+}
+.content .items button {
+  border: none;
+  border-radius: 25px;
+  padding: 7px;
+  font-size: 14px;
+  background: transparent;
+  cursor: pointer;
+}
+
+.content .items button:hover {
+  opacity: 0.7;
+  text-decoration: underline;
+}
+.content .items button:active {
+  opacity: 0.4;
+  color: var(--text);
+}
+.ul {
+  display: flex;
+  align-content: center;
+  justify-content: space-between;
+}
+.buttonDiv {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Responsiveness */
+@media screen and (max-width: 1180px) {
+  header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .input-field {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .content {
+    width: auto;
+  }
+}
+@media screen and (max-width: 825px) {
+  .content {
+    width: auto;
+  }
+  .content .items .ul {
+    display: inline-block;
+  }
+  .content .items {
+    max-width: max-content;
+  }
+}

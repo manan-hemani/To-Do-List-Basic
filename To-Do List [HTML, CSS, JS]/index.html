@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>To-Do List</title>
+    <link rel="stylesheet" href="./styles.css" />
+    <script src="./script.js" defer></script>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Ga+Maamli&family=Roboto+Mono:ital@0;1&display=swap");
+    </style>
+  </head>
+  <body>
+    <!-- header -->
+    <header>
+      <h1>To-Do List</h1>
+      <img src="./images/to do icon.png" alt="to-do icon" />
+    </header>
+
+    <!-- input field -->
+    <div class="input-field">
+      <input type="text" id="task-input" placeholder="Wanna write a task?" />
+      <!-- maxlength="60" -->
+
+      <button id="add-button">Add Task</button>
+    </div>
+
+    <!-- main display contents -->
+    <div class="content">
+      <!-- <h2>Your Tasks</h2> -->
+      <div class="items" id="to-do-list">
+        <!-- task list  -->
+      </div>
+    </div>
+  </body>
+</html>
